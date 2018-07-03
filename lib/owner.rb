@@ -50,4 +50,21 @@ class Owner
       cat.mood = "happy"
     end
   end
+  def list_pets
+    dog_num = self.pets[:dogs].length
+    cat_num = self.pets[:cats].length
+    fish_num = self.pets[:fishes].length
+    return "I have #{fish_num}, #{dog_num} dog(s), and #{cat_num} cat(s)"
+  end
+  def sell_pets
+    self.pets[:cats].each do |cat|
+      cat.mood = "nervous"
+    end
+    self.pets[:fishes].each do |fish|
+      fish.mood = "nervous"
+    end
+    self.pets[:dogs].each do |dog|
+      dog.mood = "nervous"
+    end
+  end          
 end
