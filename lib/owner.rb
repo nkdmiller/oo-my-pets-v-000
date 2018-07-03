@@ -8,5 +8,4 @@ class Owner
   def self.all
     return @@all
   end
-  def
 end
