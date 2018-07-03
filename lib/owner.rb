@@ -19,4 +19,7 @@ class Owner
   def self.count
     return @@all.length
   end
+  def buy_fish(name)
+    fish = new.Fish(name)
+    @pets[:fish] << fish
 end
