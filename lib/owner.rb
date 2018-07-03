@@ -9,4 +9,7 @@ class Owner
   def self.all
     return @@all
   end
+  def reset_all
+    @@all = []
+  end
 end
