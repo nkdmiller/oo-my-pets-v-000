@@ -36,7 +36,8 @@ class Owner
     @pets[:cats] << cat
   end
   def walk_dogs
-    nervous_dogs = self.pets[:dogs]
-    binding.pry
+    self.pets[:dogs].each do |dog|
+      dog.mood = "happy"
+    end
   end
 end
