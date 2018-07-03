@@ -54,7 +54,7 @@ class Owner
     dog_num = self.pets[:dogs].length
     cat_num = self.pets[:cats].length
     fish_num = self.pets[:fishes].length
-    return "I have #{fish_num}, #{dog_num} dog(s), and #{cat_num} cat(s)"
+    return "I have #{fish_num} fish, #{dog_num} dog(s), and #{cat_num} cat(s)"
   end
   def sell_pets
     self.pets[:cats].each do |cat|
