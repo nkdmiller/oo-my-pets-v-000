@@ -8,7 +8,7 @@ class Owner
     @@all << self
   end
   def say_species
-    return @species
+    return "I am a #{@species}."
   end
   def self.all
     return @@all
