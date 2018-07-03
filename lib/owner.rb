@@ -36,7 +36,7 @@ class Owner
     @pets[:cats] << cat
   end
   def walk_dogs
-    nervous_dogs = self.pets[dogs:]
+    nervous_dogs = self.pets[:dogs]
     binding.pry
   end
 end
